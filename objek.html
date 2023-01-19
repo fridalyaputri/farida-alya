@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var kelinci = { 
+            nama : "ucull",
+            warna : "putih",
+            jumlah_kaki : 4,
+            mata : { 
+                warna_mata : "abu abu",
+                warna_pupil : "coklat"
+            },
+            dipannggil : function (){
+                return "nurut";
+            },
+            
+            tidur : function (){
+                return "tidur di kandang";
+            }
+        }
+        
+        // saya punya kelinci
+        // dia namanya : ucull
+       document.write("dia namanya: " + kelinci.nama + "<br />");
+       document.write(`dia berwarna : ${kelinci.warna} <br />`);
+       document.write("dia berkaki: " + kelinci.jumlah_kaki + "<br />");
+       document.write("tidurnya" + kelinci.tidur());
+
+    </script>
+</body>
+</html>
